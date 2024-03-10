@@ -7,11 +7,12 @@
 body {
   background: black;
   font-size: 15px;
+  font-family: "Overpass", sans-serif;
  
 }
 
 .general-container {
-  max-width: 23rem;
+  max-width: 24rem;
   background:hsl(218, 15%, 11%);
   padding: 1.6rem;
   margin: 10rem auto;
@@ -45,14 +46,23 @@ body {
   border: none;
   background: hsl(213, 19%, 18%);
   color: hsl(216, 12%, 54%);
+  cursor: pointer;
+}
+.btn:hover {
+  background:hsl(216, 12%, 54%);
 }
 
 .submit-btn {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 2rem;
   margin-top: 1.5rem;
   background: hsl(25, 97%, 53%);
   border: none;
   color:hsl(0, 0%, 100%) ;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  
 }

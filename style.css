@@ -61,7 +61,7 @@ body {
   color:hsl(0, 0%, 100%);
 }
 
-.submit-btn {
+#submit-btn {
   width: 100%;
   padding: 0.6rem;
   border-radius: 2rem;
@@ -180,6 +180,7 @@ body {
 
 .thanks-container {
   text-align: center;
+  
   
 }
 

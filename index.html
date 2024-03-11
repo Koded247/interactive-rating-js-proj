@@ -12,7 +12,7 @@
   
 </head>
 <body>
-  <div class="general-container">
+  <div id="All-container" class="general-container">
     
     <div class="Rating-click-container">
 
@@ -28,20 +28,28 @@
       </p>
 
       <div class="rating-btn">
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
+        <button id="btn1" class="btn" data-value="1" >1</button>
+
+
+        <button id="btn2" class="btn" data-value="2">2</button>
+
+
+        <button id="btn3" class="btn" data-value="3">3</button>
+
+        <button id="btn4" class="btn" data-value="4">4</button>
+        
+        <button id="btn5" class="btn" data-value="5">5</button>
       </div>
 
       
-      <input class="submit-btn" type="submit" name="" id="">
+      <!-- <input class="submit-btn" type="submit" name="" id=""> -->
+
+      <button id="submit-btn">submit</button>
     </div>
     
 
 
-    <div class="thanks-container">
+    <div id="second-display-cont" class="thanks-container" >
       <img src="img/illustration-thank-you.svg" alt="svg">
 
       
@@ -60,7 +68,54 @@
   
 
 
-  <script src="script.js">
+  <script>
+    const ratingButtons = document.querySelectorAll ('.btn');
+
+    const submitButton = document.getElementById('submit-btn');
+
+    submitButton.addEventListener ( 'click' ,function() {
+      ratingButtons.forEach(function(button) {
+        if (button.classList.contains(clicked)) {
+
+          const ratingValue = button.dataset.value;
+          document.getElementById('result').textContent = `${ratingValue}`;
+        }
+      });
+    });
+
+          ratingButtons.forEach(function(button){
+            button.addEventListener('click',function(){
+      ratingButtons.forEach(function(butn) {
+        butn.classList.remove('clicked');
+
+              });
+          button.classList.add('clicked');
+
+      });
+    });
+
+    
+    
+
+
+
+
+    // document.getElementById ('submit-btn').addEventListener ('click', function () {
+    //   let ratingNumber = getSelectedRating();
+    //   console.log ('selected id',idValue);
+    // });
+
+    
+
+    // function getSelectedRating() {
+    //   const ratingInputs = document.getElementsByClassName ('.btn');
+
+    // }
+
+
+
+
+
 
   </script>
 </body>

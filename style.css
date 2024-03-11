@@ -20,6 +20,14 @@ body {
   border-radius: 2rem;
   line-height: 1.5rem;
 }
+
+
+/* THE RATING DISPLAY   */
+
+/* .Rating-click-container {
+  display: none;
+} */
+
 .icon {
   background: hsl(213, 19%, 18%);
   padding: 0.5rem;
@@ -50,6 +58,7 @@ body {
 }
 .btn:hover {
   background:hsl(216, 12%, 54%);
+  color:hsl(0, 0%, 100%);
 }
 
 .submit-btn {
@@ -59,10 +68,129 @@ body {
   margin-top: 1.5rem;
   background: hsl(25, 97%, 53%);
   border: none;
-  color:hsl(0, 0%, 100%) ;
+  color:hsl(0, 0%, 100%);
   cursor: pointer;
+
 }
 
 .submit-btn:hover {
+  background:hsl(0, 0%, 100%) ;
+  color:hsl(25, 97%, 53%) ;
+
+}
+
+/* THANK YOU DISPLAY  */
+
+.thanks-container {
+  text-align: center;
+  display: none;
   
+}
+
+.click-display {
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  margin: 2rem 4rem;
+  color:hsl(25, 97%, 53%)  ;
+  
+}
+
+
+            /* MEDIA QUERY SECTION */
+@media screen and (max-width: 375px) {
+body {
+ padding: 1rem;
+ height: 100vh;
+ background: black;
+ font-size: 13px;
+ font-family: "Overpass", sans-serif;
+}
+
+
+
+.general-container {
+  max-width: 24rem;
+  background:hsl(218, 15%, 11%);
+  padding: 1.7rem;
+  margin: 5rem auto;
+  color:hsl(216, 12%, 54%);
+  border-radius: 2rem;
+  line-height: 1.5rem;
+}
+
+
+/* THE RATING DISPLAY   */
+
+/* .Rating-click-container {
+  display: none;
+} */
+
+.icon {
+  background: hsl(213, 19%, 18%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.heading {
+  margin: 1rem 0;
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+.rating-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.1rem;
+  border-radius: 50%;
+  border: none;
+  background: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);
+  cursor: pointer;
+}
+.btn:hover {
+  background:hsl(216, 12%, 54%);
+  color:hsl(0, 0%, 100%);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  color:hsl(0, 0%, 100%);
+  cursor: pointer;
+
+}
+
+.submit-btn:hover {
+  background:hsl(0, 0%, 100%) ;
+  color:hsl(25, 97%, 53%) ;
+
+}
+
+/* THANK YOU DISPLAY  */
+
+.thanks-container {
+  text-align: center;
+  
+}
+
+.click-display {
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  /* margin: 2rem 4rem; */
+  margin: 1rem 2rem;
+  color:hsl(25, 97%, 53%);
+  
+  
+}
+
 }
